@@ -2906,7 +2906,6 @@ static int _regulator_set_voltage_time(struct regulator_dev *rdev,
 		return rdev->constraints->settling_time_down;
 
 	if (ramp_delay == 0) {
-		rdev_dbg(rdev, "ramp_delay not set\n");
 		return 0;
 	}
 
